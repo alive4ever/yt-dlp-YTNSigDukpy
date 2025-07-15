@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "yt-nsig-dukpy"
+version = "0.1.0"
+description = "A plugin for yt-dlp to execute n-signature script using dukpy."
+authors = ["alive4ever <alive4ever@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+yt-dlp = "^2025.06.30"
+dukpy = "^0.4.0"
+
+[[tool.poetry.packages]]
+include = "yt_dlp_plugins"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
